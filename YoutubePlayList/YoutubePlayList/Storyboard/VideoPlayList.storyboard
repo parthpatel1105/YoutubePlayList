@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play List View Controller-->
+        <scene sceneID="AQm-Uv-dtc">
+            <objects>
+                <viewController storyboardIdentifier="PlayListViewController" id="qFy-wM-hna" customClass="PlayListViewController" customModule="YoutubePlayList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpp-7r-XhP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FS4-pM-813">
+                                <rect key="frame" x="0.0" y="10" width="414" height="764"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qFy-wM-hna" id="PRE-IT-ouo"/>
+                                    <outlet property="delegate" destination="qFy-wM-hna" id="kW3-ys-eAT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XBT-Ll-h4x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XBT-Ll-h4x" firstAttribute="trailing" secondItem="FS4-pM-813" secondAttribute="trailing" id="1s3-dD-2mW"/>
+                            <constraint firstItem="FS4-pM-813" firstAttribute="leading" secondItem="XBT-Ll-h4x" secondAttribute="leading" id="CbZ-CM-GDO"/>
+                            <constraint firstItem="FS4-pM-813" firstAttribute="top" secondItem="XBT-Ll-h4x" secondAttribute="top" constant="10" id="aAo-cW-iBM"/>
+                            <constraint firstItem="XBT-Ll-h4x" firstAttribute="bottom" secondItem="FS4-pM-813" secondAttribute="bottom" id="kbx-0Q-YBd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HLa-Ej-QsL"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="FS4-pM-813" id="s3y-G6-ekC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LaO-bR-Q5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="28"/>
+        </scene>
+        <!--Item View Controller-->
+        <scene sceneID="We8-VZ-LIJ">
+            <objects>
+                <viewController storyboardIdentifier="ItemViewController" id="fKF-yJ-q9Z" customClass="ItemViewController" customModule="YoutubePlayList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3qp-0F-LuE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jjh-VZ-gKC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fKF-yJ-q9Z" id="Ach-f8-Jwz"/>
+                                    <outlet property="delegate" destination="fKF-yJ-q9Z" id="AsL-KZ-hFN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aVJ-ls-lYK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jjh-VZ-gKC" firstAttribute="leading" secondItem="aVJ-ls-lYK" secondAttribute="leading" id="OAS-P8-x5T"/>
+                            <constraint firstItem="Jjh-VZ-gKC" firstAttribute="top" secondItem="aVJ-ls-lYK" secondAttribute="top" id="cki-pF-gJI"/>
+                            <constraint firstItem="aVJ-ls-lYK" firstAttribute="bottom" secondItem="Jjh-VZ-gKC" secondAttribute="bottom" id="uNy-Uj-vMR"/>
+                            <constraint firstAttribute="trailing" secondItem="Jjh-VZ-gKC" secondAttribute="trailing" id="zwj-Ag-ddh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N5v-jU-DvY">
+                        <barButtonItem key="backBarButtonItem" title=" " id="p39-8k-StY"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="Jjh-VZ-gKC" id="hBp-FU-YRN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2Y-8g-SuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

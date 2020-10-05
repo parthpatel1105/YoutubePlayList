@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'YoutubePlayList' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for YoutubePlayList
+  
+  pod 'GoogleSignIn'
+
+#  pod 'LanguageManager-iOS'
+  
+  target 'YoutubePlayListTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'YoutubePlayListUITests' do
+    # Pods for testing
+  end
+
+end
