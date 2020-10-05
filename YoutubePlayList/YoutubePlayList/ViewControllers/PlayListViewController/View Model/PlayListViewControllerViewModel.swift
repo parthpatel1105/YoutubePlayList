@@ -100,6 +100,10 @@ class PlayListViewControllerViewModel {
                     weakSelf.playList = response
                     weakSelf.didGetData?()
                 case .failure(let error):
+                    if error.localizedDescription == "The operation couldn’t be completed" {
+                        UserProfileData.isUserLogin = false
+                        Router.shared.checkUserLogin()
+                    }
                     print(error.localizedDescription)
             }
 

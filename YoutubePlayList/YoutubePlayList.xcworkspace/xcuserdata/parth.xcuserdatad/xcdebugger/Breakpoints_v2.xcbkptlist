@@ -212,5 +212,68 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F58DA995-0FEF-445F-8F5B-FF9FC41C0069"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YoutubePlayList/ViewControllers/PlayListViewController/View Model/PlayListViewControllerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "fetchPlayList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F58DA995-0FEF-445F-8F5B-FF9FC41C0069 - a9e8ff0654e2ce52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;YoutubePlayList.PlayList, YoutubePlayList.ErrorMessage&gt;) -&gt; () in YoutubePlayList.PlayListViewControllerViewModel.fetchPlayList() -&gt; ()"
+                  moduleName = "YoutubePlayList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parth/Parth%20Folders/iCorevision/Youtube%20Demo/YoutubePlayList/YoutubePlayList/YoutubePlayList/ViewControllers/PlayListViewController/View%20Model/PlayListViewControllerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "506">
+               </Location>
+               <Location
+                  uuid = "F58DA995-0FEF-445F-8F5B-FF9FC41C0069 - a9e8ff0654e2ce52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;YoutubePlayList.PlayList, YoutubePlayList.ErrorMessage&gt;) -&gt; () in YoutubePlayList.PlayListViewControllerViewModel.fetchPlayList() -&gt; ()"
+                  moduleName = "YoutubePlayList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parth/Parth%20Folders/iCorevision/Youtube%20Demo/YoutubePlayList/YoutubePlayList/YoutubePlayList/ViewControllers/PlayListViewController/View%20Model/PlayListViewControllerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "F58DA995-0FEF-445F-8F5B-FF9FC41C0069 - a9e8ff0654e2ce52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;YoutubePlayList.PlayList, YoutubePlayList.ErrorMessage&gt;) -&gt; () in YoutubePlayList.PlayListViewControllerViewModel.fetchPlayList() -&gt; ()"
+                  moduleName = "YoutubePlayList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parth/Parth%20Folders/iCorevision/Youtube%20Demo/YoutubePlayList/YoutubePlayList/YoutubePlayList/ViewControllers/PlayListViewController/View%20Model/PlayListViewControllerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1118">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
