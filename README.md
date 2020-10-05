@@ -35,6 +35,6 @@ The project includes iOS app target and unit tests target. Architecture that was
 
 ## Contact:
 
-<li>Parth Patel<li>
-<li>Sr. iOS developer<li>
-<li>patelparth1069@gmail.com<li>
+Parth Patel<br/>
+Sr. iOS developer<br/>
+patelparth1069@gmail.com
