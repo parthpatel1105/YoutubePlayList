@@ -8,6 +8,7 @@ target 'YoutubePlayList' do
   # Pods for YoutubePlayList
   
   pod 'GoogleSignIn'
+  pod 'ValidatedPropertyKit'
 
 #  pod 'LanguageManager-iOS'
   

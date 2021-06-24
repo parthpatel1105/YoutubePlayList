@@ -172,8 +172,47 @@ class APIManager {
         }
         task.resume()
     }
+    
+    func loadMedium() {
+        let url = URL(string: "https://www.medium.com")!
+        let request = URLRequest(url: url)
+        URLSession.shared.loadData(using: request) { (data, response, error) in
+        //check for errors
+        if let error = error {
+            print("Error loading data! \n\(error)")
+        return
+        }
+        if let response = response as? HTTPURLResponse {
+            let statusCode = response.statusCode
+            //check to make sure medium.com responded to our request with a success code
+            if statusCode != 200 {
+                print("\(url.absoluteString) returned bad status code: \(statusCode)!")
+                } else {
+                    print("Loading Medium.com successful!")
+                    //print the page's html
+                    guard let data = data,
+                        let medium = String(data: data, encoding: .utf8)
+                    else { return }
+                    print(medium)
+                }
+            }
+        }
+    }
+
 }
 
+
+protocol NetworkLoader {
+    func loadData(using request: URLRequest, with completion: @escaping (Data?, URLResponse?, Error?) -> Void)
+}
+
+extension URLSession: NetworkLoader {
+    
+    // call dataTask and resume, passing the completionHandler
+    func loadData(using request: URLRequest, with completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
+        self.dataTask(with: request, completionHandler: completion).resume()
+    }
+}
 
 //let formatter = DateFormatter()
 //formatter.locale = Locale(identifier: "en_US_POSIX")

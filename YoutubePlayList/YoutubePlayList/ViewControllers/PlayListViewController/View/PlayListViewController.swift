@@ -35,7 +35,7 @@ class PlayListViewController: UIViewController, Storyboarded {
     
     func setupTableView() {
         navigationController?.navigationBar.prefersLargeTitles = true
-        self.tableView.cellIdentifier(identifier: String(describing: PlayListTableViewCell.self))
+        self.tableView.cellIdentifier(identifier: PlayListTableViewCell.reuseIdentifier)
         self.tableView.setAutoRowHeight()
         self.tableView.tableFooterView = UIView(frame: .zero)
     }

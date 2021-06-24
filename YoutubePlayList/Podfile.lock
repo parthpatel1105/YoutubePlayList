@@ -16,9 +16,11 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - GTMSessionFetcher/Full (1.4.0):
     - GTMSessionFetcher/Core (= 1.4.0)
+  - ValidatedPropertyKit (0.0.5)
 
 DEPENDENCIES:
   - GoogleSignIn
+  - ValidatedPropertyKit
 
 SPEC REPOS:
   trunk:
@@ -26,13 +28,15 @@ SPEC REPOS:
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
+    - ValidatedPropertyKit
 
 SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  ValidatedPropertyKit: 4152a5fe3114f8b3a00fc5990f9125ea038f49a2
 
-PODFILE CHECKSUM: 9aae96fd957c4369e85e76444cef71c80c60f0d2
+PODFILE CHECKSUM: cd6eb226aa413701f2dcbc4fe6d00097e9115673
 
 COCOAPODS: 1.9.3

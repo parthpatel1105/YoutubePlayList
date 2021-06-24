@@ -38,4 +38,22 @@ extension UITableView {
         self.rowHeight = UITableView.automaticDimension
         self.estimatedRowHeight = estimated
     }
+    
+    func removeExcessCells() {
+        tableFooterView = UIView(frame: .zero)
+    }
+    
+    func reloadDataOnMainThread() {
+        DispatchQueue.main.async { self.reloadData() }
+    }
+}
+
+extension UICollectionView {
+    func cellIdentifier(identifier: String) {
+        self.register(UINib(nibName: identifier, bundle: nil), forCellWithReuseIdentifier: identifier)
+    }
+
+    func cellIdentifierWithValue(identifier: String, identifierValue: String) {
+        self.register(UINib(nibName: identifier, bundle: nil), forCellWithReuseIdentifier: identifierValue)
+    }
 }
